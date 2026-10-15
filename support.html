@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CleanPlay Support</title>
+<meta name="description" content="Answers to common questions about the CleanPlay Android app, and how to contact support.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<!-- Same answers as HELP_TOPICS in app/src/main/kotlin/com/cleanplay/app/ui/help/HelpScreen.kt
+     (Google Play edition wording). Change both together. -->
+<header class="site"><a class="brand" href="./">CleanPlay</a><nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></header>
+
+<h1>Help &amp; support</h1>
+<p class="meta">The same answers are in the app: Settings → About → Help &amp; support.</p>
+
+<details><summary>Why does CleanPlay need a VPN?</summary>
+<p>Android uses a VPN connection to let CleanPlay check the names of the sites your apps look up, on your phone, and block trackers and known threats. Only those names pass through CleanPlay. Your passwords, messages and the pages you open don't, and nothing is sent to a CleanPlay server.</p></details>
+
+<details><summary>A website or app doesn't work properly</summary>
+<p>In the CleanPlay browser, tap the shield next to the address and choose "Allow ads on this site". For anything else, open Home → Recently blocked → See all and allow, find the name that was blocked and tap Allow. To check whether CleanPlay is the cause, turn Protection off for a moment and try again.</p></details>
+
+<details><summary>A website won't open at all</summary>
+<p>If it opens with Protection off, allow its blocked name as above. If it doesn't open anywhere, the site or your network may be blocking it, and CleanPlay can't change that. You can also try ⋮ → Open in Chrome.</p></details>
+
+<details><summary>Why does a video stop when I leave the browser?</summary>
+<p>Some sites, like YouTube, stop their own sound when you leave them. CleanPlay doesn't get around that. To keep watching while you use other apps, go to the home screen while the video plays: it continues in a small picture-in-picture window.</p></details>
+
+<details><summary>Can I use another VPN app?</summary>
+<p>Android allows one VPN at a time, so turning another VPN app on turns CleanPlay's protection off. The CleanPlay browser still blocks ads and trackers on web pages while it is off.</p></details>
+
+<details><summary>"Can't reach Cloudflare" or "Can't reach Quad9"</summary>
+<p>Your network may be blocking that encrypted DNS service. Pick the other one in Settings → DNS lookups.</p></details>
+
+<details><summary>"Private DNS is set to a specific provider"</summary>
+<p>Android's Private DNS setting sends lookups past CleanPlay, so nothing can be blocked. In Android's settings, set Private DNS to Off or Automatic.</p></details>
+
+<details><summary>Where are my downloads?</summary>
+<p>In your phone's Download folder. In the browser, ⋮ → Downloads lists them; tap one to open it.</p></details>
+
+<details><summary>What do private tabs keep?</summary>
+<p>Nothing from the pages themselves: no history, and their cookies, logins and site data are deleted when you close the last private tab. Files you download and bookmarks you add are kept.</p></details>
+
+<details><summary>Does CleanPlay collect my data?</summary>
+<p>No. There is no account, no ads and no analytics, and CleanPlay has no servers that receive information about you. Your history, bookmarks and settings stay on your phone. The <a href="privacy.html">privacy policy</a> has the details.</p></details>
+
+<div class="card">
+<h2 style="margin-top:0">Still stuck?</h2>
+<p>In the app, open Settings → About → Help &amp; support and tap <strong>Email support</strong>: the message starts with your CleanPlay and Android versions, which help us answer. A support email address will be added here before CleanPlay is released on Google Play.</p>
+</div>
+
+<footer>CleanPlay · <a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

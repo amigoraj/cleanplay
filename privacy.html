@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CleanPlay Privacy Policy</title>
+<meta name="description" content="How the CleanPlay Android app handles your data: it works on your phone, with no account, no ads and no analytics.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<!-- Source: docs/release/PRIVACY_POLICY.md in the CleanPlay repository. Change both together. -->
+<header class="site"><a class="brand" href="./">CleanPlay</a><nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></header>
+
+<h1>CleanPlay Privacy Policy</h1>
+<p class="meta">Last updated: 15 October 2026 · App: CleanPlay for Android (<code>com.cleanplay.app</code>) · Developer: CleanPlay · Available worldwide</p>
+<p class="meta">Contact: in the app, Settings → About → Help &amp; support. A support email address will be added here before CleanPlay is released on Google Play.</p>
+
+<div class="card">
+<h2 style="margin-top:0">The short version</h2>
+<ul>
+<li>CleanPlay works on your phone. It has <strong>no account, no ads, no analytics and no crash-reporting service</strong>, and CleanPlay has <strong>no servers</strong> that receive information about you.</li>
+<li>Your browsing history, bookmarks, downloads and settings stay <strong>on your phone</strong>.</li>
+<li>To block trackers and dangerous sites across your phone, CleanPlay uses Android's VPN feature. <strong>Only the names of the sites your apps look up</strong> pass through CleanPlay, and they are checked on your phone. Your passwords, messages and the pages you open do not pass through it.</li>
+<li>When you buy CleanPlay Premium, <strong>Google Play</strong> handles the payment. CleanPlay never sees your card or bank details.</li>
+</ul>
+</div>
+
+<h2>1. Protection across your phone (the VPN)</h2>
+<p>When you turn Protection on, Android asks you to allow CleanPlay's VPN connection. CleanPlay uses it only to see the <strong>domain names</strong> (for example <code>ads.example.com</code>) that apps on your phone look up before connecting to them.</p>
+<ul>
+<li>Each name is checked <strong>on your phone</strong> against block lists of known ad, tracker and malware sites. A blocked name is answered on your phone, so the connection never happens. In the Google Play edition of CleanPlay, ads inside other apps are not blocked; the CleanPlay browser blocks ads on web pages in both editions.</li>
+<li>A name that isn't blocked is sent on for an answer to the service you choose in Settings → DNS lookups:
+  <ul>
+  <li><strong>Your network</strong> (not offered in the Google Play edition): your mobile or Wi-Fi provider's DNS service, unencrypted, as it would be without CleanPlay.</li>
+  <li><strong>Cloudflare (encrypted)</strong> or <strong>Quad9 (encrypted)</strong>: that company's DNS service, over an encrypted connection your provider can't read. Their own privacy policies apply to the lookups they answer.</li>
+  </ul></li>
+<li>CleanPlay does <strong>not</strong> keep a record of the names your apps look up. It keeps <strong>counts</strong> (how many ads, trackers and threats were blocked) and a <strong>"Recently blocked" list</strong> of up to 200 blocked domain names, so you can see what was blocked and allow a site. Both are kept in memory only and disappear when CleanPlay is closed by Android or restarted; you can also clear the list yourself.</li>
+<li>The rest of your internet traffic (the pages, videos and messages themselves) does not go through CleanPlay.</li>
+</ul>
+<p>Android allows one VPN at a time, so turning on another VPN app turns CleanPlay's protection off.</p>
+
+<h2>2. The CleanPlay browser</h2>
+<ul>
+<li><strong>History</strong> (address, title and time of the last 1,000 pages), <strong>bookmarks</strong> and <strong>open tabs</strong> are saved in CleanPlay's private storage on your phone. You can delete them at any time (History → ✕ or Clear; Settings → Browser data).</li>
+<li><strong>Cookies and site data</strong> are kept by the browser on your phone, as in any browser, and can be cleared in Settings → Browser data. Cookies from other sites embedded in a page (third-party cookies) are turned off.</li>
+<li><strong>Private tabs</strong> keep their cookies, logins and site data separately and delete them when you close the last private tab. They leave no history.</li>
+<li><strong>Searches</strong> you type in the address bar go to <strong>DuckDuckGo</strong>, whose privacy policy applies.</li>
+<li>Websites you visit receive your requests, as in any browser. CleanPlay sends them a shortened description of your browser that leaves out your phone's model.</li>
+<li><strong>Downloads</strong> are carried out by Android's own download manager and saved in your phone's Download folder. They are yours to keep and delete.</li>
+<li>When you choose <strong>"Open in Chrome"</strong>, the page's address is handed to Chrome, whose own policies then apply.</li>
+</ul>
+
+<h2>3. Media playback</h2>
+<p>When a page plays audio or video, CleanPlay shows the title, the site or channel name and a thumbnail picture on your lock screen, in the notification shade and on connected Bluetooth devices. The thumbnail is downloaded from the address the page itself publishes and is kept in memory only. In a private tab, these show only "Playing in a private tab".</p>
+
+<h2>4. Lists CleanPlay downloads</h2>
+<p>Once a day CleanPlay downloads the latest lists it uses, directly from the people who publish them:</p>
+<table>
+<thead><tr><th>List</th><th>Downloaded from</th><th>Used for</th></tr></thead>
+<tbody>
+<tr><td>StevenBlack hosts</td><td>raw.githubusercontent.com (GitHub)</td><td>Blocking ad and malware sites</td></tr>
+<tr><td>URLhaus</td><td>urlhaus.abuse.ch (abuse.ch)</td><td>Blocking malware sites</td></tr>
+<tr><td>EasyPrivacy</td><td>easylist.to</td><td>Blocking tracking sites</td></tr>
+<tr><td>EasyList</td><td>easylist.to</td><td>Hiding leftover ad boxes on web pages</td></tr>
+</tbody>
+</table>
+<p>These are ordinary downloads. Like any website, those servers can see your phone's internet address when it connects; <strong>no information about you or your browsing is sent with the request</strong>.</p>
+
+<!-- PREMIUM: uncomment the section below from the day Premium can be bought.
+<h2>5. CleanPlay Premium</h2>
+<p>Premium features are bought through <strong>Google Play</strong>. Google processes the payment under its own terms and privacy policy. CleanPlay receives only a confirmation from Google Play that the purchase was made, which it uses to unlock the features on your phone. CleanPlay never receives your name, card or bank details.</p>
+<p>Basic protection, the browser, private tabs, downloads, picture-in-picture and lock-screen controls stay free and never require a purchase or an account.</p>
+-->
+
+<h2>5. Permissions</h2>
+<table>
+<thead><tr><th>Permission</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>VPN connection (asked by Android when you turn Protection on)</td><td>To check the names apps look up and block trackers and threats, as described in section 1</td></tr>
+<tr><td>Internet and network state</td><td>To load web pages, download the lists, and send allowed lookups to your chosen DNS service</td></tr>
+<tr><td>Notifications (optional)</td><td>To show that protection is on, and media controls while something plays</td></tr>
+<tr><td>Foreground services</td><td>To keep protection and media playback running while you use other apps</td></tr>
+</tbody>
+</table>
+
+<h2>6. Children</h2>
+<p>CleanPlay is not directed at children under 13 and does not knowingly collect information from them. It collects no personal information from anyone.</p>
+
+<h2>7. Keeping and deleting your data</h2>
+<p>Everything CleanPlay stores is on your phone, in storage other apps can't read, and is not backed up to the cloud by CleanPlay. You can delete it in the app (history, cookies and site data, allowed sites, downloads), or all at once by uninstalling CleanPlay or clearing its storage in Android's settings. CleanPlay holds nothing about you elsewhere, so there is nothing else to delete.</p>
+
+<h2>8. Your rights, wherever you live</h2>
+<p>Privacy laws in many places, for example the EU and UK General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA) and Malaysia's Personal Data Protection Act (PDPA), give you rights over personal data held about you: to see it, correct it, delete it, or object to how it is used. CleanPlay holds <strong>no personal data about you</strong> outside your own phone, and it does not sell or share personal data. The data on your phone is under your control, as described in section 7. If you have a question or a request, use Help &amp; support in the app; we will answer within 30 days.</p>
+<p>CleanPlay works the same in every country. It does not move your data between countries, because it doesn't receive any. The lists it downloads (section 4) and the DNS services you choose (section 1) are run by their own providers, which may be located in other countries.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, the new version will be published at this address with a new "Last updated" date. Important changes will also be shown in the app.</p>
+
+<h2>10. Contact</h2>
+<p>Questions or requests: in the app, open Settings → About → Help &amp; support. A support email address will be added here before CleanPlay is released on Google Play. Messages you send reach us through your own email app, and we use them only to answer you.</p>
+
+<footer>CleanPlay · <a href="support.html">Support</a></footer>
+</main>
+</body>
+</html>
